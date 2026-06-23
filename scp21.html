@@ -494,9 +494,9 @@
                 await updateDoc(doc(db, "scenepacks", scpId), { downloads: increment(1) });
             } catch(err) { console.error(err); }
         }
-        window.open(document.querySelector('.btn-primary').href, '_blank');
+        window.location.href = document.querySelector('.btn-primary').href;
     });
 </script>
-
+    
 </body>
 </html>
